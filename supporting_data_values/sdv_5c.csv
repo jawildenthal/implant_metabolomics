@@ -1,0 +1,10 @@
+"","runID","sampleStatus","days_before_swelling","days_before_erythema","days_before_diagnosis","days_before_removal"
+"1","XBR100","drain_3_Y",7,7,-6,22
+"2","XBR135","drain_3_Y",0,0,11,13
+"3","XBR182","drain_3_Y",71,72,76,76
+"4","XBR185","drain_3_Y",-22,NA,12,13
+"5","XBR186","drain_3_Y",NA,-11,12,13
+"6","XBR200","drain_3_Y",11,13,13,15
+"7","XBR234","drain_3_Y",NA,NA,1,1
+"8","XBR235","drain_3_Y",NA,NA,1,1
+"9","XBR245","drain_3_Y",-17,NA,18,18
