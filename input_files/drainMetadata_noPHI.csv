@@ -1,0 +1,101 @@
+runID,sampleStatus,pt_side,days_since_mast,days_before_removal,bact_isolate,days_before_diagnosis,days_before_erythema,days_before_swelling
+XBR001,drain_1_Y,1_L,7,37,NA,32,30,NA
+XBR003,drain_2_Y,1_L,15,29,Staphylococcus epidermidis,24,22,NA
+XBR005,drain_1_N,2_L,8,119,NA,NA,NA,NA
+XBR006,drain_1_N,2_R,8,119,NA,NA,NA,NA
+XBR007,drain_2_N,2_L,16,111,NA,NA,NA,NA
+XBR008,drain_2_N,2_R,16,111,Staphylococcus aureus,NA,NA,NA
+XBR009,drain_3_N,2_L,25,102,Staphylococcus aureus;Staphylococcus epidermidis;Streptococcus agalactiae,NA,NA,NA
+XBR010,drain_3_N,2_R,25,102,Corynebacterium auriscanis;Staphylococcus aureus;Streptococcus agalactiae,NA,NA,NA
+XBR012,drain_1_N,12_R,9,179,NA,NA,NA,NA
+XBR014,drain_1_Y,4_R,8,16,NA,16,-4,14
+XBR015,drain_1_N,3_R,15,75,NA,NA,NA,NA
+XBR016,drain_1_Y,3_L,15,75,NA,56,56,56
+XBR019,drain_2_Y,4_R,15,9,Enterococcus faecalis;Pseudomonas aeruginosa,9,-11,7
+XBR021,drain_1_N,13_L,6,97,NA,NA,NA,NA
+XBR023,drain_1_N,13_R,6,97,Enterococcus faecalis;Staphylococcus epidermidis;Staphylococcus haemolyticus,NA,NA,NA
+XBR024,drain_2_Y,3_L,29,61,Enterobacter spp.;Stenotrophomonas rhizophila,42,42,42
+XBR025,drain_2_N,3_R,29,61,Staphylococcus epidermidis;Stenotrophomonas maltophilia,NA,NA,NA
+XBR028,drain_2_N,12_R,29,159,Enterococcus faecalis;Pseudomonas aeruginosa,NA,NA,NA
+XBR032,drain_2_N,13_R,23,80,Enterobacter hormaechei,NA,NA,NA
+XBR033,drain_2_N,13_L,23,80,Enterobacter spp.;Enterococcus faecalis;Pseudomonas putida,NA,NA,NA
+XBR045,drain_1_Y,14_R,11,44,Staphylococcus epidermidis,35,NA,35
+XBR046,drain_1_Y,14_L,11,44,Corynebacterium striatum;Staphylococcus capitis,35,NA,35
+XBR050,drain_1_N,10_L,9,416,Enterococcus faecalis;Serratia marcescens;Staphylococcus epidermidis,NA,38,18
+XBR052,drain_2_Y,14_L,18,37,Corynebacterium striatum,28,NA,28
+XBR053,drain_2_Y,14_R,18,37,Corynebacterium striatum,28,NA,28
+XBR054,drain_2_N,10_L,16,409,Enterococcus faecalis;Serratia marcescens,NA,31,11
+XBR056,drain_1_N,15_L,11,303,Acinetobacter pittii,NA,NA,NA
+XBR059,drain_1_N,5_L,11,248,NA,NA,NA,25
+XBR065,drain_2_N,15_L,25,289,Acinetobacter pittii;Enterococcus faecium;Staphylococcus epidermidis;Stenotrophomonas maltophilia,NA,NA,NA
+XBR070,drain_1_N,16_L,13,139,Staphylococcus epidermidis,NA,NA,NA
+XBR072,drain_2_N,5_L,22,237,Delftia acidovorans;Enterococcus faecalis;Sphingobacterium spiritivorum;Staphylococcus epidermidis,NA,NA,14
+XBR082,drain_1_N,22_R,14,59,Staphylococcus epidermidis,NA,NA,NA
+XBR086,drain_3_N,10_L,55,370,Pseudomonas oryzihabitans;Staphylococcus aureus;Staphylococcus warneri,NA,-8,-28
+XBR088,drain_2_N,22_R,21,52,Bacillus cereus group;Proteus mirabilis;Staphylococcus epidermidis,NA,NA,NA
+XBR091,drain_1_Y,28_R,8,36,Enterococcus faecalis,8,21,21
+XBR094,drain_2_Y,28_R,15,29,Enterobacter spp.;Enterococcus faecalis;Proteus mirabilis,1,14,14
+XBR099,drain_1_N,29_L,15,185,NA,77,65,73
+XBR100,drain_3_Y,28_R,22,22,Corynebacterium jeikeium;Enterococcus faecalis;Proteus mirabilis;Staphylococcus epidermidis,-6,7,7
+XBR311,drain_1_N,35_L,8,160,Staphylococcus haemolyticus;Staphylococcus warneri,NA,NA,NA
+XBR116,drain_1_Y,36_L,12,37,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus warneri,35,24,24
+XBR117,drain_2_N,35_L,15,153,Carnobacterium divergens;Staphylococcus haemolyticus;Staphylococcus warneri,NA,NA,NA
+XBR119,drain_1_N,30_L,11,31,Acinetobacter baumannii;Enterobacter spp.,NA,21,NA
+XBR121,drain_2_Y,36_L,18,31,Pseudomonas aeruginosa,29,18,18
+XBR124,drain_1_N,37_L,13,461,Rothia terrae;Staphylococcus hominis;Staphylococcus warneri,NA,40,40
+XBR126,drain_2_N,30_L,18,24,Acinetobacter baumannii;Enterobacter spp.;Enterococcus faecalis;Staphylococcus epidermidis,NA,14,NA
+XBR313,drain_1_Y,31_R,15,35,Corynebacterium jeikeium;Enterococcus faecalis;Pseudomonas aeruginosa,35,33,33
+XBR127,drain_1_Y,31_L,15,35,Pseudomonas aeruginosa;Streptococcus agalactiae,35,NA,NA
+XBR129,drain_3_N,30_L,25,17,Acinetobacter baumannii;Enterobacter spp.;Enterococcus faecalis,NA,7,NA
+XBR131,drain_1_N,38_L,13,93,Staphylococcus epidermidis;Staphylococcus haemolyticus,NA,NA,NA
+XBR132,drain_2_N,37_L,27,447,NO_ID;Pseudomonas putida;Staphylococcus pasteuri,NA,26,26
+XBR135,drain_3_Y,36_L,36,13,Pseudomonas aeruginosa;Serratia marcescens,11,0,0
+XBR136,drain_2_N,38_L,19,87,Staphylococcus epidermidis;Staphylococcus haemolyticus,NA,NA,NA
+XBR315,drain_2_Y,31_R,34,16,Pseudomonas aeruginosa,16,14,14
+XBR143,drain_3_N,37_L,41,433,Pseudomonas putida,NA,12,12
+XBR158,drain_1_N,40_R,9,206,NA,NA,NA,NA
+XBR159,drain_1_N,42_L,7,78,Cutibacterium acnes;Streptococcus spp.,NA,NA,NA
+XBR160,drain_1_N,42_R,7,78,Staphylococcus epidermidis,NA,NA,NA
+XBR161,drain_1_Y,43_R,15,36,Pseudomonas aeruginosa,35,NA,1
+XBR162,drain_1_Y,43_L,15,36,Pseudomonas aeruginosa,35,12,NA
+XBR163,drain_1_N,45_L,13,70,NA,NA,NA,NA
+XBR164,drain_1_N,45_R,13,70,NA,NA,NA,NA
+XBR165,drain_1_Y,46_R,13,89,Corynebacterium spp.,89,85,84
+XBR166,drain_1_N,46_L,13,89,NA,NA,85,NA
+XBR167,drain_2_N,46_L,17,85,NA,NA,81,NA
+XBR168,drain_2_Y,46_R,17,85,Corynebacterium spp.;Streptococcus gordonii,85,81,80
+XBR169,drain_2_Y,43_L,27,24,Pseudomonas aeruginosa,23,0,NA
+XBR170,drain_2_Y,43_R,27,24,Pseudomonas aeruginosa,23,NA,-11
+XBR171,drain_2_N,42_R,20,65,Acinetobacter lwoffii;Enterococcus faecalis,NA,NA,NA
+XBR172,drain_2_N,42_L,20,65,Enterococcus faecalis;Staphylococcus haemolyticus,NA,NA,NA
+XBR173,drain_2_N,45_R,20,63,NA,NA,NA,NA
+XBR174,drain_2_N,45_L,20,63,NA,NA,NA,NA
+XBR176,drain_1_N,48_R,9,227,NA,NA,NA,NA
+XBR178,drain_1_N,47_L,9,237,NA,NA,NA,NA
+XBR179,drain_1_Y,49_R,7,30,Cutibacterium acnes,28,28,26
+XBR180,drain_1_N,49_L,7,30,NA,NA,NA,NA
+XBR181,drain_3_N,45_L,27,56,Bacillus spp.;Corynebacterium jeikeium,NA,NA,NA
+XBR182,drain_3_Y,46_R,26,76,Corynebacterium tuberculostearicum,76,72,71
+XBR183,drain_3_N,46_L,26,76,Corynebacterium spp.;Staphylococcus epidermidis,NA,72,NA
+XBR184,drain_2_N,47_L,16,230,NA,NA,NA,NA
+XBR185,drain_3_Y,43_R,38,13,Pseudomonas aeruginosa,12,NA,-22
+XBR186,drain_3_Y,43_L,38,13,Corynebacterium jeikeium;Pseudomonas aeruginosa,12,-11,NA
+XBR187,drain_2_Y,49_R,15,22,Staphylococcus haemolyticus;Staphylococcus lugdunensis,20,20,18
+XBR188,drain_2_N,49_L,15,22,ANAEROBE_FAILED_TO_RESSURECT;Staphylococcus haemolyticus,NA,NA,NA
+XBR194,drain_2_N,48_R,23,213,NA,NA,NA,NA
+XBR197,drain_1_N,51_L,8,83,Enterococcus faecalis;Staphylococcus epidermidis,NA,NA,NA
+XBR198,drain_1_N,51_R,8,83,Staphylococcus epidermidis;Staphylococcus saprophyticus,NA,NA,7
+XBR199,drain_3_N,49_L,22,15,Bacillus spp.;Granulicatella adiacens;Staphylococcus epidermidis;Staphylococcus haemolyticus,NA,NA,NA
+XBR200,drain_3_Y,49_R,22,15,Staphylococcus cohnii;Staphylococcus haemolyticus,13,13,11
+XBR207,drain_2_N,51_L,15,76,Enterococcus faecalis;Staphylococcus epidermidis,NA,NA,NA
+XBR225,drain_1_Y,53_R,14,56,Staphylococcus aureus,56,NA,21
+XBR227,drain_1_Y,44_R,8,21,Enterococcus faecalis;Staphylococcus epidermidis,21,NA,NA
+XBR228,drain_1_Y,44_L,8,21,Staphylococcus epidermidis,21,NA,NA
+XBR230,drain_2_Y,53_R,20,50,Serratia marcescens;Staphylococcus aureus;Staphylococcus intermedius;Staphylococcus pseudintermedius,50,NA,15
+XBR231,drain_2_Y,44_R,22,7,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus,7,NA,NA
+XBR232,drain_2_Y,44_L,22,7,Enterobacter spp.;Enterococcus faecalis;Finegoldia magna;Pseudomonas aeruginosa;Staphylococcus aureus,7,NA,NA
+XBR234,drain_3_Y,44_R,28,1,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus,1,NA,NA
+XBR235,drain_3_Y,44_L,28,1,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus,1,NA,NA
+XBR245,drain_3_Y,53_R,52,18,Staphylococcus aureus,18,NA,-17
+XBR251,drain_1_N,55_R,9,194,NA,NA,NA,NA
+XBR257,drain_2_N,55_R,19,184,Staphylococcus epidermidis,NA,NA,NA

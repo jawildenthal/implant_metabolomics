@@ -1,0 +1,183 @@
+sampleID,collectionNum,runID,patient,sampletype,side,datecollected,uniformID,bacteriaIsolate_ALL
+001-DR-L1,1,XBR001,1,drain,L,4/26/2022,1_drain_L_1,NA
+001-DR-L2,2,XBR003,1,drain,L,5/4/2022,1_drain_L_2,Staphylococcus epidermidis
+002-DR-L1,1,XBR005,2,drain,L,5/10/2022,2_drain_L_1,NA
+002-DR-R1,1,XBR006,2,drain,R,5/10/2022,2_drain_R_1,NA
+002-DR-L2,2,XBR007,2,drain,L,5/18/2022,2_drain_L_2,NA
+002-DR-R2,2,XBR008,2,drain,R,5/18/2022,2_drain_R_2,Staphylococcus aureus
+002-DR-L3,3,XBR009,2,drain,L,5/27/2022,2_drain_L_3,Staphylococcus aureus;Staphylococcus epidermidis;Streptococcus agalactiae
+002-DR-R3,3,XBR010,2,drain,R,5/27/2022,2_drain_R_3,Corynebacterium auriscanis;Staphylococcus aureus;Streptococcus agalactiae
+012-DR-R1,1,XBR012,12,drain,R,5/27/2022,12_drain_R_1,NA
+004-DR-R1,1,XBR014,4,drain,R,5/31/2022,4_drain_R_1,NA
+003-DR-R1,1,XBR015,3,drain,R,6/1/2022,3_drain_R_1,NA
+003-DR-L1,1,XBR016,3,drain,L,6/1/2022,3_drain_L_1,NA
+004-DR-R2,2,XBR019,4,drain,R,6/7/2022,4_drain_R_2,Enterococcus faecalis;Pseudomonas aeruginosa
+013-DR-L1,1,XBR021,13,drain,L,6/7/2022,13_drain_L_1,NA
+013-DR-R1,1,XBR023,13,drain,R,6/7/2022,13_drain_R_1,Enterococcus faecalis;Staphylococcus epidermidis;Staphylococcus haemolyticus
+003-DR-L2,2,XBR024,3,drain,L,6/15/2022,3_drain_L_2,Enterobacter spp.;Stenotrophomonas rhizophila
+003-DR-R2,2,XBR025,3,drain,R,6/15/2022,3_drain_R_2,Staphylococcus epidermidis;Stenotrophomonas maltophilia
+004-SF-R-OR,1,XBR026,4,seroma,R,6/16/2022,4_seroma_R_1,Proteus mirabilis;Pseudomonas aeruginosa
+012-DR-R2,2,XBR028,12,drain,R,6/16/2022,12_drain_R_2,Enterococcus faecalis;Pseudomonas aeruginosa
+013-DR-R2,2,XBR032,13,drain,R,6/24/2022,13_drain_R_2,Enterobacter hormaechei
+013-DR-L2,2,XBR033,13,drain,L,6/24/2022,13_drain_L_2,Enterobacter spp.;Enterococcus faecalis;Pseudomonas putida
+014-DR-R1,1,XBR045,14,drain,R,7/19/2022,14_drain_R_1,Staphylococcus epidermidis
+014-DR-L1,1,XBR046,14,drain,L,7/19/2022,14_drain_L_1,Corynebacterium striatum;Staphylococcus capitis
+010-DR-L1,1,XBR050,10,drain,L,7/22/2022,10_drain_L_1,Enterococcus faecalis;Serratia marcescens;Staphylococcus epidermidis
+014-DR-L2,2,XBR052,14,drain,L,7/26/2022,14_drain_L_2,Corynebacterium striatum
+014-DR-R2,2,XBR053,14,drain,R,7/26/2022,14_drain_R_2,Corynebacterium striatum
+010-DR-L2,2,XBR054,10,drain,L,7/29/2022,10_drain_L_2,Enterococcus faecalis;Serratia marcescens
+015-DR-L1,1,XBR056,15,drain,L,8/2/2022,15_drain_L_1,Acinetobacter pittii
+005-DR-L1,1,XBR059,5,drain,L,8/12/2022,5_drain_L_1,NA
+003-SF-R-OR,1,XBR061,3,seroma,R,8/15/2022,3_seroma_R_1,NA
+003-IM-L-OR (pus),1,XBR063,3,seroma,L,8/15/2022,3_seroma_L_1,Bacillus cereus group;Enterobacter spp.;Staphylococcus capitis
+015-DR-L2,2,XBR065,15,drain,L,8/16/2022,15_drain_L_2,Acinetobacter pittii;Enterococcus faecium;Staphylococcus epidermidis;Stenotrophomonas maltophilia
+016-DR-L1,1,XBR070,16,drain,L,8/23/2022,16_drain_L_1,Staphylococcus epidermidis
+005-DR-L2,2,XBR072,5,drain,L,8/23/2022,5_drain_L_2,Delftia acidovorans;Enterococcus faecalis;Sphingobacterium spiritivorum;Staphylococcus epidermidis
+001-SF-L-OR,1,XBR078,1,seroma,L,6/2/2022,1_seroma_L_1,Cutibacterium acnes
+014-SF-2-R,2,XBR080,14,seroma,R,9/1/2022,14_seroma_R_2,Corynebacterium striatum
+014-SF-2-L,2,XBR081,14,seroma,L,9/1/2022,14_seroma_L_2,Corynebacterium striatum
+022-DR-R1,1,XBR082,22,drain,R,9/2/2022,22_drain_R_1,Staphylococcus epidermidis
+002-SF-L2,2,XBR083,2,seroma,L,9/6/2022,2_seroma_L_2,Cutibacterium avidum;Staphylococcus epidermidis
+002-SF-R2,2,XBR084,2,seroma,R,9/6/2022,2_seroma_R_2,NA
+010-DR-L3,3,XBR086,10,drain,L,9/6/2022,10_drain_L_3,Pseudomonas oryzihabitans;Staphylococcus Aureus;Staphylococcus warneri
+022-DR-R2,2,XBR088,22,drain,R,9/9/2022,22_drain_R_2,Bacillus cereus group;Proteus mirabilis;Staphylococcus epidermidis
+013-SF-1-R,1,XBR089,13,seroma,R,9/12/2022,13_seroma_R_1,NA
+013-SF-1-L,1,XBR090,13,seroma,L,9/12/2022,13_seroma_L_1,Cutibacterium acnes
+028-DR-R1,1,XBR091,28,drain,R,9/14/2022,28_drain_R_1,Enterococcus faecalis
+028-DR-R2,2,XBR094,28,drain,R,9/21/2022,28_drain_R_2,Enterobacter spp.;Enterococcus faecalis;Proteus mirabilis
+029-DR-L1,1,XBR099,29,drain,L,9/23/2022,29_drain_L_1,NA
+028-DR-R3,3,XBR100,28,drain,R,9/28/2022,28_drain_R_3,Corynebacterium jeikeium;Enterococcus faecalis;Proteus mirabilis;Staphylococcus epidermidis
+035-DR-L1,1,XBR311,35,drain,L,10/18/2022,35_drain_L_1,Staphylococcus haemolyticus;Staphylococcus warneri
+028-SF-4-R,4,XBR312,28,seroma,R,10/20/2022,28_seroma_R_4,Enterococcus faecalis;Staphylococcus lugdunensis
+036-DR-1-L,1,XBR116,36,drain,L,10/25/2022,36_drain_L_1,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus warneri
+035-DR-L2,2,XBR117,35,drain,L,10/25/2022,35_drain_L_2,Carnobacterium divergens;Staphylococcus haemolyticus;Staphylococcus warneri
+030-DR-L1,1,XBR119,30,drain,L,10/28/2022,30_drain_L_1,Acinetobacter baumannii;Enterobacter spp.
+022-SF-1-R,1,XBR120,22,seroma,R,10/31/2022,22_seroma_R_1,Peptoniphulus asaccharolyticus;Proteus mirabilis
+036-DR-2-L,2,XBR121,36,drain,L,10/31/2022,36_drain_L_2,Pseudomonas aeruginosa
+037-DR-L1,1,XBR124,37,drain,L,11/2/2022,37_drain_L_1,Rothia terrae;Staphylococcus hominis;Staphylococcus warneri
+030-DR-L2,2,XBR126,30,drain,L,11/4/2022,30_drain_L_2,Acinetobacter baumannii;Enterobacter spp.;Enterococcus faecalis;Staphylococcus epidermidis
+031-DR-R1,1,XBR313,31,drain,R,11/9/2022,31_drain_R_1,Corynebacterium jeikeium;Enterococcus faecalis;Pseudomonas aeruginosa
+031-DR-L1,1,XBR127,31,drain,L,11/9/2022,31_drain_L_1,Pseudomonas aeruginosa;Streptococcus agalactiae
+030-DR-L3,3,XBR129,30,drain,L,11/11/2022,30_drain_L_3,Acinetobacter baumannii;Enterobacter spp.;Enterococcus faecalis
+038-DR-L1,1,XBR131,38,drain,L,11/15/2022,38_drain_L_1,Staphylococcus epidermidis;Staphylococcus haemolyticus
+037-DR-L2,2,XBR132,37,drain,L,11/16/2022,37_drain_L_2,NO_ID;Pseudomonas putida;Staphylococcus pasteuri
+036-DR-L3,3,XBR135,36,drain,L,11/18/2022,36_drain_L_3,Pseudomonas aeruginosa;Serratia marcescens
+038-DR-L2,2,XBR136,38,drain,L,11/21/2022,38_drain_L_2,Staphylococcus epidermidis;Staphylococcus haemolyticus
+012-SR-R1,1,XBR137,12,seroma,R,11/22/2022,12_seroma_R_1,NA
+031-DR-R2,2,XBR315,31,drain,R,11/28/2022,31_drain_R_2,Pseudomonas aeruginosa
+030-SF-L-1,1,XBR141,30,seroma,L,11/28/2022,30_seroma_L_1,NA
+037-DR-L3,3,XBR143,37,drain,L,11/30/2022,37_drain_L_3,Pseudomonas putida
+036-SF-L2,2,XBR144,36,seroma,L,12/1/2022,36_seroma_L_2,Pseudomonas aeruginosa;Staphylococcus epidermidis
+031-SF-R1,1,XBR149,31,seroma,R,12/14/2022,31_seroma_R_1,Pseudomonas aeruginosa
+031-SF-L1,1,XBR150,31,seroma,L,12/14/2022,31_seroma_L_1,Pseudomonas aeruginosa
+016-SF-L1,1,XBR156,16,seroma,L,1/9/2023,16_seroma_L_1,NA
+040-DR-R1,1,XBR158,40,drain,R,1/20/2023,40_drain_R_1,NA
+042-DR-L1,1,XBR159,42,drain,L,2/1/2023,42_drain_L_1,Cutibacterium acnes;Streptococcus spp.
+042-DR-R1,1,XBR160,42,drain,R,2/1/2023,42_drain_R_1,Staphylococcus epidermidis
+043-DR-R1,1,XBR161,43,drain,R,2/1/2023,43_drain_R_1,Pseudomonas aeruginosa
+043-DR-L1,1,XBR162,43,drain,L,2/1/2023,43_drain_L_1,Pseudomonas aeruginosa
+045-DR-L1,1,XBR163,45,drain,L,2/8/2023,45_drain_L_1,NA
+045-DR-R1,1,XBR164,45,drain,R,2/8/2023,45_drain_R_1,NA
+046-DR-R1,1,XBR165,46,drain,R,2/9/2023,46_drain_R_1,Corynebacterium spp.
+046-DR-L1,1,XBR166,46,drain,L,2/9/2023,46_drain_L_1,NA
+046-DR-L2,2,XBR167,46,drain,L,2/13/2023,46_drain_L_2,NA
+046-DR-R2,2,XBR168,46,drain,R,2/13/2023,46_drain_R_2,Corynebacterium spp.;Streptococcus gordonii
+043-DR-L2,2,XBR169,43,drain,L,2/13/2023,43_drain_L_2,Pseudomonas aeruginosa
+043-DR-R2,2,XBR170,43,drain,R,2/13/2023,43_drain_R_2,Pseudomonas aeruginosa
+042-DR-R2,2,XBR171,42,drain,R,2/14/2023,42_drain_R_2,Acinetobacter lwoffii;Enterococcus faecalis
+042-DR-L2,2,XBR172,42,drain,L,2/14/2023,42_drain_L_2,Enterococcus faecalis;Staphylococcus haemolyticus
+045-DR-R2,2,XBR173,45,drain,R,2/15/2023,45_drain_R_2,NA
+045-DR-L2,2,XBR174,45,drain,L,2/15/2023,45_drain_L_2,NA
+038-SF-SW-L1,1,XBR175,38,seroma,L,2/16/2023,38_seroma_L_1,NA
+048-DR-R1,1,XBR176,48,drain,R,2/17/2023,48_drain_R_1,NA
+047-DR-L1,1,XBR178,47,drain,L,2/17/2023,47_drain_L_1,NA
+049-DR-R1,1,XBR179,49,drain,R,2/21/2023,49_drain_R_1,Cutibacterium acnes
+049-DR-L1,1,XBR180,49,drain,L,2/21/2023,49_drain_L_1,NA
+045-DR-L3,3,XBR181,45,drain,L,2/22/2023,45_drain_L_3,Bacillus spp.;Corynebacterium jeikeium
+046-DR-R-3,3,XBR182,46,drain,R,2/22/2023,46_drain_R_3,Corynebacterium tuberculostearicum
+046-DR-L-3,3,XBR183,46,drain,L,2/22/2023,46_drain_L_3,Corynebacterium spp.;Staphylococcus epidermidis
+047-DR-L2,2,XBR184,47,drain,L,2/24/2023,47_drain_L_2,NA
+043-DR-R3,3,XBR185,43,drain,R,2/24/2023,43_drain_R_3,Pseudomonas aeruginosa
+043-DR-L3,3,XBR186,43,drain,L,2/24/2023,43_drain_L_3,Corynebacterium jeikeium;Pseudomonas aeruginosa
+049-DR-R2,2,XBR187,49,drain,R,3/1/2023,49_drain_R_2,Staphylococcus haemolyticus;Staphylococcus lugdunensis
+049-DR-L2,2,XBR188,49,drain,L,3/1/2023,49_drain_L_2,ANAEROBE_FAILED_TO_RESSURECT;Staphylococcus haemolyticus
+048-DR-R2,2,XBR194,48,drain,R,3/3/2023,48_drain_R_2,NA
+051-DR-L1,1,XBR197,51,drain,L,3/8/2023,51_drain_L_1,Enterococcus faecalis;Staphylococcus epidermidis
+051-DR-R1,1,XBR198,51,drain,R,3/8/2023,51_drain_R_1,Staphylococcus epidermidis;Staphylococcus saprophyticus
+049-DR-L3,3,XBR199,49,drain,L,3/8/2023,49_drain_L_3,Bacillus spp.;Granulicatella adiacens;Staphylococcus epidermidis;Staphylococcus haemolyticus
+049-DR-R3,3,XBR200,49,drain,R,3/8/2023,49_drain_R_3,Staphylococcus cohnii;Staphylococcus haemolyticus
+043-SF-R1,1,XBR203,43,seroma,R,3/9/2023,43_seroma_R_1,Corynebacterium jeikeium
+043-SF-L1,1,XBR204,43,seroma,L,3/9/2023,43_seroma_L_1,Pseudomonas aeruginosa
+051-DR-L2,2,XBR207,51,drain,L,3/15/2023,51_drain_L_2,Enterococcus faecalis;Staphylococcus epidermidis
+049-SF-R2,2,XBR218,49,seroma,R,3/23/2023,49_seroma_R_2,Cutibacterium avidum
+049-SF-L1,1,XBR219,49,seroma,L,3/23/2023,49_seroma_L_1,Cutibacterium avidum
+029-SF-L4,4,XBR221,29,seroma,L,3/27/2023,29_seroma_L_4,Staphylococcus epidermidis
+035-SF-L1,1,XBR222,35,seroma,L,3/27/2023,35_seroma_L_1,Staphylococcus epidermidis
+053-DR-R1,1,XBR225,53,drain,R,3/28/2023,53_drain_R_1,Staphylococcus aureus
+044-DR-R1,1,XBR227,44,drain,R,3/28/2023,44_drain_R_1,Enterococcus faecalis;Staphylococcus epidermidis
+044-DR-L1,1,XBR228,44,drain,L,3/28/2023,44_drain_L_1,Staphylococcus epidermidis
+053-DR-R2,2,XBR230,53,drain,R,4/3/2023,53_drain_R_2,Serratia marcescens;Staphylococcus aureus;Staphylococcus intermedius;Staphylococcus pseudintermedius
+044-DR-R2,2,XBR231,44,drain,R,4/11/2023,44_drain_R_2,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus
+044-DR-L2,2,XBR232,44,drain,L,4/11/2023,44_drain_L_2,Enterobacter spp.;Enterococcus faecalis;Finegoldia magna;Pseudomonas aeruginosa;Staphylococcus aureus
+005-SF-L1,1,XBR233,5,seroma,L,4/17/2023,5_seroma_L_1,NA
+044-DR-R3,3,XBR234,44,drain,R,4/17/2023,44_drain_R_3,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus
+044-DR-L3,3,XBR235,44,drain,L,4/17/2023,44_drain_L_3,Enterococcus faecalis;Pseudomonas aeruginosa;Staphylococcus aureus
+044-SF-R1,1,XBR236,44,seroma,R,4/18/2023,44_seroma_R_1,Pseudomonas aeruginosa
+044-SF-L1,1,XBR237,44,seroma,L,4/18/2023,44_seroma_L_1,Pseudomonas aeruginosa;Staphylococcus epidermidis
+045-SF-R1,1,XBR238,45,seroma,R,4/19/2023,45_seroma_R_1,Cutibacterium acnes;Staphylococcus epidermidis
+045-SF-L1,1,XBR239,45,seroma,L,4/19/2023,45_seroma_L_1,NA
+042-SF-R1,1,XBR240,42,seroma,R,4/20/2023,42_seroma_R_1,NA
+042-SF-L1,1,XBR241,42,seroma,L,4/20/2023,42_seroma_L_1,Cutibacterium acnes
+053-DR-R3,3,XBR245,53,drain,R,5/5/2023,53_drain_R_3,Staphylococcus aureus
+046-SF-R1,1,XBR249,46,seroma,R,5/9/2023,46_seroma_R_1,Corynebacterium spp.;Cutibacterium acnes
+046-SF-L1,1,XBR250,46,seroma,L,5/9/2023,46_seroma_L_1,Cutibacterium avidum
+055-DR-R1,1,XBR251,55,drain,R,5/12/2023,55_drain_R_1,NA
+055-DR-R2,2,XBR257,55,drain,R,5/22/2023,55_drain_R_2,Staphylococcus epidermidis
+053-SF-R5,5,XBR259,53,seroma,R,5/23/2023,53_seroma_R_5,Serratia marcescens;Staphylococcus aureus
+051-SF-R2,2,XBR261,51,seroma,R,5/30/2023,51_seroma_R_2,NA
+051-SF-L1,1,XBR262,51,seroma,L,5/30/2023,51_seroma_L_1,Cutibacterium acnes;Micrococcus luteus
+015-SF-L1,1,XBR263,15,seroma,L,6/1/2023,15_seroma_L_1,Staphylococcus caprae
+040-SF-R1,1,XBR266,40,seroma,R,8/14/2023,40_seroma_R_1,NA
+010-SF-L1,1,XBR267,10,seroma,L,9/11/2023,10_seroma_L_1,NA
+048-SF-R1,1,XBR268,48,seroma,R,10/2/2023,48_seroma_R_1,NA
+047-SF-L1,1,XBR269,47,seroma,L,10/12/2023,47_seroma_L_1,Streptococcus gordonii
+055-SF-R1 (less than one drop),1,XBR270,55,seroma,R,11/22/2023,55_seroma_R_1,NA
+117-2-SF-L,1,XBR271,117,seroma,L,pilot,117_seroma_L_1,Staphylococcus aureus
+105-2-SF-L,1,XBR293,105,seroma,L,pilot,105_seroma_L_1,Cutibacterium acnes
+113-2-SF-L,1,XBR294,113,seroma,L,pilot,113_seroma_L_1,NA
+115-2-SF-L,1,XBR295,115,seroma,L,pilot,115_seroma_L_1,NA
+121-2-SF-L,1,XBR296,121,seroma,L,pilot,121_seroma_L_1,Staphylococcus epidermidis
+125-2-SF-R,1,XBR273,125,seroma,R,pilot,125_seroma_R_1,Paenibacillus lautus;Staphylococcus epidermidis
+108-6-SF-R,1,XBR274,108,seroma,R,pilot,108_seroma_R_1,Corynebacterium tuberculostearicum;Cutibacterium acnes;Staphylococcus epidermidis
+109-2-SF-R,1,XBR275,109,seroma,R,pilot,109_seroma_R_1,Cutibacterium acnes
+119-5-SF-R,1,XBR276,119,seroma,R,pilot,119_seroma_R_1,Klebsiella aerogenes
+129-2-SF-L,1,XBR297,129,seroma,L,pilot,129_seroma_L_1,NA
+123-5-SF-L,1,XBR298,123,seroma,L,pilot,123_seroma_L_1,Staphylococcus epidermidis;Streptococcus agalactiae
+101-6-SF-L,1,XBR299,101,seroma,L,pilot,101_seroma_L_1,Cutibacterium acnes;Cutibacterium avidum;Cutibacterium granulosum
+140-2-SF-L,1,XBR277,140,seroma,L,pilot,140_seroma_L_1,NA
+144-2-SF-R,1,XBR300,144,seroma,R,pilot,144_seroma_R_1,Corynebacterium simulans;Corynebacterium xerosis;Proteus mirabilis;Staphylococcus epidermidis
+110-2-SF-R,1,XBR301,110,seroma,R,pilot,110_seroma_R_1,Cutibacterium acnes
+147-2-SF-L,1,XBR278,147,seroma,L,pilot,147_seroma_L_1,NA
+111-2-SF-L,1,XBR302,111,seroma,L,pilot,111_seroma_L_1,NA
+150-2-SF-L,1,XBR303,150,seroma,L,pilot,150_seroma_L_1,Citrobacter koseri;Klebsiella pneumoniae
+148-2-SF-R,1,XBR304,148,seroma,R,pilot,148_seroma_R_1,NA
+130-7-SF-R,1,XBR279,130,seroma,R,pilot,130_seroma_R_1,NA
+151-2-SF-R,1,XBR280,151,seroma,R,pilot,151_seroma_R_1,Finegoldia magna;Staphylococcus lugdunensis
+153-2-SF-L,1,XBR281,153,seroma,L,pilot,153_seroma_L_1,Staphylococcus epidermidis
+145-4-SF-R,1,XBR282,145,seroma,R,pilot,145_seroma_R_1,Pseudomonas aeruginosa;Staphylococcus epidermidis
+154-2-SF-R,1,XBR283,154,seroma,R,pilot,154_seroma_R_1,NA
+126-6-SF-L,1,XBR305,126,seroma,L,pilot,126_seroma_L_1,NA
+156-2-SF-L,1,XBR284,156,seroma,L,pilot,156_seroma_L_1,Cutibacterium acnes
+149-5-SF-L,1,XBR285,149,seroma,L,pilot,149_seroma_L_1,Proteus mirabilis
+157-2-SF-R,1,XBR286,157,seroma,R,pilot,157_seroma_R_1,Pseudomonas aeruginosa
+158-2-SF-L,1,XBR287,158,seroma,L,pilot,158_seroma_L_1,Staphylococcus aureus
+143-6-SF-R,1,XBR306,143,seroma,R,pilot,143_seroma_R_1,NA
+161-2-SF-R,1,XBR288,161,seroma,R,pilot,161_seroma_R_1,NA
+162-2-SF-R,1,XBR307,162,seroma,R,pilot,162_seroma_R_1,Staphylococcus epidermidis
+122-7-SF-L,1,XBR289,122,seroma,L,pilot,122_seroma_L_1,Enterococcus faecalis;Staphylococcus epidermidis;Streptococcus sanguis
+142-7-SF-R,1,XBR308,142,seroma,R,pilot,142_seroma_R_1,Corynebacterium jeikeium;Cutibacterium avidum;Enterobacter cloacae;Staphylococcus epidermidis;Staphylococcus lugdunensis
+163-2-SF-R,1,XBR290,163,seroma,R,pilot,163_seroma_R_1,Staphylococcus epidermidis
+165-2-SF-R,1,XBR291,165,seroma,R,pilot,165_seroma_R_1,Staphylococcus aureus
+134-7-SF-L,1,XBR292,134,seroma,L,pilot,134_seroma_L_1,NA
+116-2-SF-R,1,XBR272,116,seroma,R,pilot,116_seroma_R_1,NA
+037-SF-L-1,1,XBR316,37,seroma,L,2/6/2024,37_seroma_L_1,NA
