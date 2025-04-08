@@ -25,7 +25,7 @@ library(data.table)
 library(pheatmap)
 
 #set the directory that contains the folder from github. It should include three folders: "input_files", "intermediate_files", and "figures_and_tables"
-mydir <- "C:/Users/johna/Box/John Wildenthal's First Thesis Manuscript/code_for_github"
+mydir <- "./"
 
 setwd(mydir)
 
@@ -33,13 +33,16 @@ atremoval <- read_csv("input_files/atremoval_FINAL.csv")
 drainMetadata <- read_csv("input_files/drainMetadata_noPHI.csv")
 xbrkey <- read_csv("input_files/xbrkey.csv")
 
+# large files are zipped, but large size requires larger memory cache to read them
+Sys.setenv(VROOM_CONNECTION_SIZE = 256000)
+
 #import negative data
-rawneg <- read_csv("input_files/20240131_all_implant_samples_neg_MS2_aln_noRTalign_compounds.csv")
+rawneg <- read_csv("input_files/20240131_all_implant_samples_neg_MS2_aln_noRTalign_compounds.csv.zip")
 
 #positive compounds were exported in different files, but contain the same information as negative files. I apologize as this increases the complexity of the code to analyze them
-rawposcompounds <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_compounds.csv")
-rawposgapfilling <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_gap_filling.csv")
-rawpospeakrating <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_peak_ratings.csv")
+rawposcompounds <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_compounds.csv.zip")
+rawposgapfilling <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_gap_filling.csv.zip")
+rawpospeakrating <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_peak_ratings.csv.zip")
 
 #this is to create a unique and easy to understand "compoundID" [CID] for each compound
 #this consists of the mode (pos/neg), calculated molecular weight (note: this is sometimes incorrectly automatically calculated and requires manual inspection), and retention time (minutes)
