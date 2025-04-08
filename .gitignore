@@ -2,3 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
+intermediate_files/logareaall.csv
+intermediate_files/logareawithdrains.csv
