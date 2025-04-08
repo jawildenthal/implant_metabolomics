@@ -360,7 +360,7 @@ gfsYNPR5IN10 <- gapfillstatusPR5IN10!=32
 
 #this is a correlation matrix of all features to all other features, but it calculates correlations using pairs of samples where neither has the gap status "Filled by Spectrum Noise"
 newcormat <- matrix(-999, nrow=dim(logareaPR5IN10)[2], ncol=dim(logareaPR5IN10)[2])
-newtmp <- lapply(1:dim(logareaPR5IN10)[2], function(qw){print(qw);sapply(1:dim(logareaPR5IN10)[2], function(qe){cor(logareaPR5IN10[gfsYNPR5IN10[,qw]&gfsYNPR5IN10[,qe],qw],logareaPR5IN10[gfsYNPR5IN10[,qw]&gfsYNPR5IN10[,qe],qe])})})
+newtmp <- lapply(1:dim(logareaPR5IN10)[2], function(qw){if(qw %% 100 == 0) print(qw);sapply(1:dim(logareaPR5IN10)[2], function(qe){cor(logareaPR5IN10[gfsYNPR5IN10[,qw]&gfsYNPR5IN10[,qe],qw],logareaPR5IN10[gfsYNPR5IN10[,qw]&gfsYNPR5IN10[,qe],qe])})})
 
 for(i in 1:dim(logareaPR5IN10)[2]){
   newcormat[i,] <- newtmp[[i]]
@@ -369,7 +369,7 @@ newcormat[is.na(newcormat)] <- 0
 
 #this finds the median per-sample difference in intensity between the two peaks. It isn't used for further calculations but was used to get an idea of which peaks were larger
 medIMinusJ <- matrix(-999, nrow=dim(logareaPR5IN10)[2], ncol=dim(logareaPR5IN10)[2])
-tmpiminusj <- lapply(1:dim(logareaPR5IN10)[2], function(qw){print(qw);sapply(1:dim(logareaPR5IN10)[2], function(qe){median(logareaPR5IN10[,qw]-logareaPR5IN10[,qe])})})
+tmpiminusj <- lapply(1:dim(logareaPR5IN10)[2], function(qw){if(qw %% 100 == 0) print(qw);sapply(1:dim(logareaPR5IN10)[2], function(qe){median(logareaPR5IN10[,qw]-logareaPR5IN10[,qe])})})
 
 for(i in 1:dim(logareaPR5IN10)[2]){
   medIMinusJ[i,] <- tmpiminusj[[i]]
@@ -377,7 +377,7 @@ for(i in 1:dim(logareaPR5IN10)[2]){
 
 #this gets the RT difference between peaks
 rtdiffs <- matrix(-999, nrow=dim(logareaPR5IN10)[2], ncol=dim(logareaPR5IN10)[2])
-tmprts <- lapply(1:dim(logareaPR5IN10)[2], function(qw){print(qw);abs(myrts[qw]-myrts)})
+tmprts <- lapply(1:dim(logareaPR5IN10)[2], function(qw){if(qw %% 100 == 0) print(qw);abs(myrts[qw]-myrts)})
 
 for(i in 1:dim(logareaPR5IN10)[2]){
   rtdiffs[i,] <- tmprts[[i]]
