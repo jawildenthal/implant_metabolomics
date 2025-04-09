@@ -250,35 +250,45 @@ write.csv(logareawithdrains, "intermediate_files/logareawithdrains.csv")
 #alldata <- readMSData(files = filelist, mode="onDisk", verbose=TRUE)
 #saveRDS(alldata, "alldata_ondisk.rds") #I advise saving this, as reading in LCMS data can take a while
 
-alldata <- readRDS("C:/Users/johna/Box/Research Notes/IDX data/20240123 all implant samples/alldata_ondisk.rds")
-allpos <- filterFile(alldata, grep("samples_pos",fileNames(alldata)))
-allneg <- filterFile(alldata, grep("samples_neg",fileNames(alldata)))
+# data_path <- "C:/Users/john.robinson/Documents/ms_data/JAW/AD integration"
+# alldata <- readRDS(file.path(data_path, "alldata_ondisk.rds"))
+# # fix file paths
+# alldata@processingData@files <- sapply(X = fileNames(alldata), FUN = function(orig_name) {
+#   return(file.path(data_path, "ALLMZML", basename(orig_name)))
+# })
+# allpos <- filterFile(alldata, grep("samples_pos",fileNames(alldata)))
+# allneg <- filterFile(alldata, grep("samples_neg",fileNames(alldata)))
 
 instudy <- data.frame(logareawithdrains)
 
-xbrtoget <- rownames(instudy)
-xbrtoget[xbrtoget=="XBR090"] <- "XBR090_rerun" #the first injection had an error, so we need to ensure we get the re-run for this
+# xbrtoget <- rownames(instudy)
+# xbrtoget[xbrtoget=="XBR090"] <- "XBR090_rerun" #the first injection had an error, so we need to ensure we get the re-run for this
+# 
+# whichfiles <- sapply(xbrtoget, function(i){grep(i, fileNames(allpos))})
+# 
+# #filter files for the RT/mz window of interest
+# subFiles <- filterFile(allpos, unlist(whichfiles))
+# ad1_4plus_subFiles <- subFiles
+# ad1_4plus_subFiles <- filterRt(ad1_4plus_subFiles, rt=c(610,630))
+# ad1_4plus_subFiles <- filterMz(ad1_4plus_subFiles, mz=c(861.3859-5/1000000*861.3859, 861.3859+5/1000000*861.3859))
+# 
+# #manually integrate AD1 abundance using manualChromPeaks
+# manpeakmat1 <- matrix(c(861.3859-5/1000000*861.3859, 861.3859+5/1000000*861.3859, 610,630), nrow=1)
+# colnames(manpeakmat1) <- c("mzmin","mzmax","rtmin","rtmax")
+# manAD1 <- manualChromPeaks(ad1_4plus_subFiles, chromPeaks=manpeakmat1)
+# 
+# 
+# mymat1 <- chromPeaks(manAD1)
+# vals1 <- data.frame(mymat1[,c("into","sample")])
+# vals1["filename"] <- sapply(vals1["sample"], function(i){fileNames(ad1_4plus_subFiles)[i]})
+# # convert the file names into the runIDs
+# vals1["xbr"] <- str_match(basename(vals1$filename), "(XBR\\d{3})")[, 2]
+# 
+# # save peak areas
+# write.csv(vals1, "intermediate_files/AD1_values.csv")
 
-whichfiles <- sapply(xbrtoget, function(i){grep(i, fileNames(allpos))})
-
-#filter files for the RT/mz window of interest
-subFiles <- filterFile(allpos, unlist(whichfiles))
-ad1_4plus_subFiles <- subFiles
-ad1_4plus_subFiles <- filterRt(ad1_4plus_subFiles, rt=c(610,630))
-ad1_4plus_subFiles <- filterMz(ad1_4plus_subFiles, mz=c(861.3859-5/1000000*861.3859, 861.3859+5/1000000*861.3859))
-
-#manually integrate AD1 abundance using manualChromPeaks
-manpeakmat1 <- matrix(c(861.3859-5/1000000*861.3859, 861.3859+5/1000000*861.3859, 610,630), nrow=1)
-colnames(manpeakmat1) <- c("mzmin","mzmax","rtmin","rtmax")
-manAD1 <- manualChromPeaks(ad1_4plus_subFiles, chromPeaks=manpeakmat1)
-
-
-mymat1 <- chromPeaks(manAD1)
-vals1 <- data.frame(mymat1[,c("into","sample")])
-vals1["filename"] <- sapply(vals1["sample"], function(i){fileNames(ad1_4plus_subFiles)[i]})
-#this text removal may be different based on file location. Basically, it is turning the file name into the runID
-vals1["xbr"] <- str_remove(vals1$filename, fixed('C:\\Users\\johna\\Box\\Research Notes\\IDX data\\20240123 all implant samples\\ALLMZML\\20240116_all_implant_samples_pos_'))
-vals1$xbr <- str_remove(vals1$xbr, ".mzML")
+# load saved AD1 peak areas. Allows running script without access to mzML files
+vals1 <- read.csv("intermediate_files/AD1_values.csv")
 
 #log-transform values and place them into the correct row of "instudy"
 #Additionally, interpolate zero values to be 0.001 less than the minimum detected value of all samples (i.e. estimated limit of detection). 
@@ -288,22 +298,27 @@ instudy["AD1"] <- sapply(rownames(instudy), function(i){ifelse(is.element(i,vals
 
 #####AD3
 #Do the same for AD3 as was done above for AD1. Note difference in mz and RT
-ad3_4plus_subFiles <- subFiles
-ad3_4plus_subFiles <- filterRt(ad3_4plus_subFiles, rt=c(620,640))
-ad3_4plus_subFiles <- filterMz(ad3_4plus_subFiles, mz=c(872.3826-5/1000000*872.3826, 872.3826+5/1000000*872.3826))
+# ad3_4plus_subFiles <- subFiles
+# ad3_4plus_subFiles <- filterRt(ad3_4plus_subFiles, rt=c(620,640))
+# ad3_4plus_subFiles <- filterMz(ad3_4plus_subFiles, mz=c(872.3826-5/1000000*872.3826, 872.3826+5/1000000*872.3826))
+# 
+# manpeakmat3 <- matrix(c(872.3826-5/1000000*872.3826, 872.3826+5/1000000*872.3826, 620,640), nrow=1)
+# colnames(manpeakmat3) <- c("mzmin","mzmax","rtmin","rtmax")
+# 
+# manAD3 <- manualChromPeaks(ad3_4plus_subFiles, chromPeaks=manpeakmat3)
+# 
+# 
+# mymat3 <- chromPeaks(manAD3)
+# vals3 <- data.frame(mymat3[,c("into","sample")])
+# vals3["filename"] <- sapply(vals3["sample"], function(i){fileNames(ad3_4plus_subFiles)[i]})
+# # convert the file names into the runIDs
+# vals3["xbr"] <- str_match(basename(vals3$filename), "(XBR\\d{3})")[, 2]
 
-manpeakmat3 <- matrix(c(872.3826-5/1000000*872.3826, 872.3826+5/1000000*872.3826, 620,640), nrow=1)
-colnames(manpeakmat3) <- c("mzmin","mzmax","rtmin","rtmax")
+# # save peak areas
+# write.csv(vals3, "intermediate_files/AD3_values.csv")
 
-manAD3 <- manualChromPeaks(ad3_4plus_subFiles, chromPeaks=manpeakmat3)
-
-
-mymat3 <- chromPeaks(manAD3)
-vals3 <- data.frame(mymat3[,c("into","sample")])
-vals3["filename"] <- sapply(vals3["sample"], function(i){fileNames(ad3_4plus_subFiles)[i]})
-vals3["xbr"] <- str_remove(vals3$filename, fixed('C:\\Users\\johna\\Box\\Research Notes\\IDX data\\20240123 all implant samples\\ALLMZML\\20240116_all_implant_samples_pos_'))
-vals3$xbr <- str_remove(vals3$xbr, ".mzML")
-
+# load saved AD3 peak areas. Allows running script without access to mzML files
+vals3 <- read.csv("intermediate_files/AD3_values.csv")
 #log-transform values and place them into the correct row of "instudy"
 #Additionally, interpolate zero values to be 0.001 less than the minimum detected value of all samples (i.e. estimated limit of detection). 
 #This is to avoid zero values in our dataset, which complicates certain forms of analysis (such as log ratios)
