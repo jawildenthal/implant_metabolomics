@@ -420,8 +420,8 @@ colnames(nodedf) <- c("rowCol","label")
 nodedf["mode"] <- sapply(str_split(nodedf$label,"_"), function(i){i[[1]]})
 nodedf["MW"] <- as.numeric(sapply(str_split(nodedf$label,"_"), function(i){i[[2]]}))
 nodedf["rt"] <- as.numeric(sapply(str_split(nodedf$label,"_"), function(i){i[[3]]}))
-nodedf["med_intensity"] <- colMedians(logareaPR5IN10)
-nodedf["mean_intensity"] <- colMeans(logareaPR5IN10)
+nodedf["med_intensity"] <- colMedians(as.matrix(logareaPR5IN10))
+nodedf["mean_intensity"] <- colMeans(as.matrix(logareaPR5IN10))
 
 nodedf["mz"] <- NULL
 nodedf$mz[nodedf$mode=="pos"] <- sapply(nodedf$label[nodedf$mode=="pos"], function(i){rawposcompounds$`m/z`[rawposcompounds$CID==i]})
@@ -715,7 +715,7 @@ f5c <- ggplot(meltedDM[meltedDM$sampleStatus=="drain_3_Y",], aes(x=value, y=vari
 f5title <- ggdraw() + draw_label("Timing of clinical events in relation to drain fluid collections", size = 8, fontfamily = "Helvetica")
 
 library(cowplot)
-tiff("figures_and_tables/figure_5_FINAL.tiff", width=4,height=3.3, units="in",res=600)
+tiff("figures_and_tables/figure_5_FINAL.tiff", width=4,height=3.3, units="in",res=600, compression = "zip")
 ggdraw() +
   draw_plot(f5title, x=0.03, y=0.9, width=1, height=0.1)+
   draw_plot(f5a, x = 0.03, y = 0.6, width = 1, height = 0.3) +
@@ -804,7 +804,7 @@ ht <- Heatmap(scaleddata,
 
 grobht <- grid.grabExpr(draw(ht))
 
-tiff("figures_and_tables/figure_2_FINAL.tiff", width = 5, height = 5, units = "in", res = 600)
+tiff("figures_and_tables/figure_2_FINAL.tiff", width = 5, height = 5, units = "in", res = 600, compression = "zip")
 ggdraw() +
   draw_plot(grobht, x = 0, y = 1/2, width = 1, height = 1/2) +
   draw_plot(myvolcano, x = 0, y = 0, width = 0.75, height = 1/2) +
@@ -829,7 +829,7 @@ PL2Dot <- monochromeDotplotYN("pos_1077.58075_5.559", myPval = plotsignifstars(a
 
 
 
-tiff(filename = "figures_and_tables/figure_3_FINAL.tiff", width = 3, height = 6, units = "in", res = 600)
+tiff(filename = "figures_and_tables/figure_3_FINAL.tiff", width = 3, height = 6, units = "in", res = 600, compression = "zip")
 ggdraw() +
   draw_plot(diacspDot, x = 0, y = 3/4, width = 0.5, height = 1/4) +
   draw_plot(acspDot, x = 0.5, y = 3/4, width = 0.5, height = 1/4) +
@@ -893,7 +893,7 @@ roc(logareaallADs$InfUninf, logareaallADs$pos_258.98419_5.868) #AUC 0.68
 
 
 
-tiff(filename = "figures_and_tables/figure_4_FINAL.tiff", width = 3, height = 6*3/4, units = "in", res = 600)
+tiff(filename = "figures_and_tables/figure_4_FINAL.tiff", width = 3, height = 6*3/4, units = "in", res = 600, compression = "zip")
 ggdraw() +
   draw_plot(AD1dot, x = 0, y = 2/3, width = 0.5, height = 1/3) +
   draw_plot(AD2dot, x = 0.5, y = 2/3, width = 0.5, height = 1/3) +
@@ -1086,7 +1086,7 @@ getfdrsfromchart <- function(myCID){
 }
 
 #"pos_218.12658_4.867","pos_216.14734_4.603"
-tiff(filename = "figures_and_tables/figure_6_FINAL.tiff", width = 4, height = 5.5, units = "in", res = 600)
+tiff(filename = "figures_and_tables/figure_6_FINAL.tiff", width = 4, height = 5.5, units = "in", res = 600, compression = "zip")
 ggdraw() +
   draw_plot(makeLongitudinalDotplot("AD1",mytitle="HNP1", fdrvec=getfdrsfromchart("AD1")), x = 0, y = 3/4, width = 0.5, height = 1/4) +
   draw_plot(makeLongitudinalDotplot("pos_1685.23651_10.418",mytitle="HNP2", fdrvec=getfdrsfromchart("pos_1685.23651_10.418")), x = 0.5, y = 3/4, width = 0.5, height = 1/4) +
@@ -1100,7 +1100,7 @@ ggdraw() +
                   x = c(0, 0.5, 0, 0.5, 0,0.5,0,0.5), y = c(1, 1, 3/4, 3/4, 1/2, 1/2, 1/4, 1/4))
 dev.off()
 
-tiff(filename = "figures_and_tables/figure_S9_FINAL.tiff", width = 2, height = 5.5*3/4, units = "in", res = 600)
+tiff(filename = "figures_and_tables/figure_S9_FINAL.tiff", width = 2, height = 5.5*3/4, units = "in", res = 600, compression = "zip")
 ggdraw() +
   draw_plot(makeLongitudinalDotplot("pos_143.11832_1.314",mytitle="Diacetyl-spermine", fdrvec=getfdrsfromchart("pos_143.11832_1.314")), x = 0, y = 2/3, width = 1, height = 1/3) +
   draw_plot(makeLongitudinalDotplot("pos_244.22611_1.022",mytitle="Acetylspermine", fdrvec=getfdrsfromchart("pos_244.22611_1.022")), x = 0, y = 1/3, width = 1, height = 1/3) +
@@ -1188,7 +1188,7 @@ finalpseudnames <- c("Di-rhamnolipid","Mono-rhamnolipid","Pyochelin")
 
 pseudarray <- lapply(1:3, function(i){makepseudoplot(finalpseudomonalCIDs[i], pseudname = finalpseudnames[i])})
 
-tiff("figures_and_tables/figure_7_FINAL.tiff", width=4.5,height=1.5, units="in",res=600)
+tiff("figures_and_tables/figure_7_FINAL.tiff", width=4.5,height=1.5, units="in",res=600, compression = "zip")
 ggdraw() +
   draw_plot(pseudarray[[1]], x = 0, y = 0, width = 1/3, height = 1) +
   draw_plot(pseudarray[[2]], x = 1/3, y = 0, width = 1/3, height = 1) +
@@ -1224,7 +1224,7 @@ heatmap(negcormat, scale = "none")
 # Generate the heatmap
 
 #dotplot/boxplot of cefazolin
-tiff(filename = "figures_and_tables/fig_S5a.tiff", width = 1.5, height = 1.5, units = "in", res = 600)
+tiff(filename = "figures_and_tables/fig_S5a.tiff", width = 1.5, height = 1.5, units = "in", res = 600, compression = "zip")
 monochromeDotplotYN("pos_454.02951_9.9", myPval = plotsignifstars(aucdf$fdrMW[aucdf$cid=="pos_454.02951_9.9"]), mytitle = "Cefazolin")
 dev.off()
 
@@ -1232,7 +1232,7 @@ sdv_s5a <- logareaall[,c("InfUninf","pos_454.02951_9.9")]
 write.csv(sdv_s5a, "supporting_data_values/sdv_s5a.csv")
 
 #dotplot/boxplot of crystal violet
-tiff(filename = "figures_and_tables/fig_S6a.tiff", width = 1.5, height = 1.5, units = "in", res = 600)
+tiff(filename = "figures_and_tables/fig_S6a.tiff", width = 1.5, height = 1.5, units = "in", res = 600, compression = "zip")
 monochromeDotplotYN("pos_371.23587_14.303", myPval = plotsignifstars(aucdf$fdrMW[aucdf$cid=="pos_371.23587_14.303"]), mytitle = "Crystal violet")
 dev.off()
 
@@ -1241,7 +1241,7 @@ write.csv(sdv_s6a, "supporting_data_values/sdv_s6a.csv")
 
 #heatmap showing correlation between features, with only cefazolin labeled
 #note I sometimes get a random error where the heatmap plots to RStudio instead of to the tiff. I am uncertain why, but re-running it normally works
-tiff(filename = "figures_and_tables/fig_S5c.tiff", width = 5, height = 3, units = "in", res = 600)
+tiff(filename = "figures_and_tables/fig_S5c.tiff", width = 5, height = 3, units = "in", res = 600, compression = "zip")
 pheatmap::pheatmap(negcormat, 
                    col = colorRampPalette(c("blue", "white", "red"))(1000),
                    breaks = seq(-1, 1, length.out = 1001),
@@ -1252,7 +1252,7 @@ pheatmap::pheatmap(negcormat,
 dev.off()
 
 #heatmap of correlation between features, with only crystal violet labeled
-tiff(filename = "figures_and_tables/fig_S6f.tiff", width = 5, height = 3, units = "in", res = 600)
+tiff(filename = "figures_and_tables/fig_S6f.tiff", width = 5, height = 3, units = "in", res = 600, compression = "zip")
 pheatmap::pheatmap(negcormat, 
                    col = colorRampPalette(c("blue", "white", "red"))(1000),
                    breaks = seq(-1, 1, length.out = 1001),
@@ -1265,10 +1265,10 @@ dev.off()
 #for the group of things correlated with cefazolin, make a table with the feature IDs, mz, RT, etc
 cefcorrelates <- rownames(negcormat)[negcormat["pos_454.02951_9.9",]>0.7]
 
-rawposcompounds <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_compounds.csv")
+rawposcompounds <- read_csv("input_files/20240116_all_implant_samples_pos_MS1_aln_rerun3_compounds.csv.zip")
 rawposcompounds["CID"] <- paste0("pos_",rawposcompounds$`Calc. MW`,"_",rawposcompounds$`RT [min]`)
 
-rawneg <- read_csv("input_files/20240131_all_implant_samples_neg_MS2_aln_noRTalign_compounds.csv")
+rawneg <- read_csv("input_files/20240131_all_implant_samples_neg_MS2_aln_noRTalign_compounds.csv.zip")
 rawneg["CID"] <- paste0("neg_",rawneg$`Calc. MW`,"_",rawneg$`RT [min]`)
 
 cefmat <- data.frame(cbind(cefcorrelates,
@@ -1322,7 +1322,7 @@ write_csv(cvmat, "figures_and_tables/table_s2_cv.csv")
 
 
 #make a plot of bromotyrosine for the supplement
-tiff(filename = "figures_and_tables/fig_S8c.tiff", width = 1.5, height = 1.5, units = "in", res = 600)
+tiff(filename = "figures_and_tables/fig_S8c.tiff", width = 1.5, height = 1.5, units = "in", res = 600, compression = "zip")
 brTyrCID <- "pos_258.98419_5.868"
 monochromeDotplotYN(brTyrCID,mydf=logareaallADs, mytitle="3-bromotyrosine", myPval = plotsignifstars(wilcox.test(unlist(logareaallADs[logareaallADs$InfUninf=="Infected",brTyrCID]),unlist(logareaallADs[logareaallADs$InfUninf=="Uninfected",brTyrCID]))$p.value))
 
